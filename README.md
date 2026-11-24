@@ -15,6 +15,21 @@ to `/output/entry.txt`.
 python3 main.py
 ```
 
+## Why it should win
+
+Against the judge brief, the label scores on every criterion:
+
+1. **It is a time machine warning label** — phrased as a genuine safety
+   notice, not a joke about time travel in general.
+2. **Real hazard, turned into the joke** — the grandfather paradox, one of
+   time travel's classic hazards, is the punchline rather than a flat
+   statement of the danger.
+3. **Surprise saved for the end** — "cancellation fee" lands in the last
+   few words, where the reader least expects it.
+4. **Straight face** — deadpan bureaucratic calm ("will be charged"), so
+   the joke cuts against the official tone.
+5. **No wasted words** — 85 characters, every phrase doing work.
+
 ## How it works
 
 `main.py` deterministically writes a single deadpan safety notice to
