@@ -30,6 +30,16 @@ Against the judge brief, the label scores on every criterion:
    the joke cuts against the official tone.
 5. **No wasted words** — 85 characters, every phrase doing work.
 
+## Verification
+
+```sh
+python3 main.py          # writes /output/entry.txt
+python3 -c "t=open('/output/entry.txt',encoding='utf-8').read(); assert 1 <= len(t) <= 120 and t.strip(); print(f'{len(t)} chars — gate PASS')"
+```
+
+Output is deterministic: repeated runs write byte-identical files
+(same md5), so the entry is the same on every grading run.
+
 ## How it works
 
 `main.py` deterministically writes a single deadpan safety notice to
